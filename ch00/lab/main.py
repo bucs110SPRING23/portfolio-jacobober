@@ -28,3 +28,4 @@ screen.blit(text, screen.get_rect().center)
 pygame.display.flip()
 
 pygame.time.wait(2000)
+
