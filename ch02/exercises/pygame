@@ -1,8 +1,0 @@
-pygame.init() #Module 'pygame' has no 'init' member
-
-screen = pygame.display.set_mode()
-screen.fill("red")
-pygame.display.flip()
-input("Press Enter to continue...")
-screen.fill("green")
-#pygame keeps track of display image and next image
