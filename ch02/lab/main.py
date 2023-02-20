@@ -37,8 +37,8 @@ window.exitonclick()
 pygame.init()
 window = pygame.display.set_mode()
 
-xpos = 100
-ypos = 100
+xpos = 500
+ypos = 500
 side_length = 100
 shapes = [3, 4, 6, 20, 100, 360]
 
