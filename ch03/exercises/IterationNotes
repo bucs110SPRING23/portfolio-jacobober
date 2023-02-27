@@ -1,0 +1,96 @@
+#Iteration 
+#Iterable- you can loop over it
+# mystr = "hello"         #immutable               #special iterable list of characters
+# myotherstring = "hello" #immutable
+
+# mynums = [1, 2, 3, 4, 5]      #mutable
+# myothernums = [1, 2, 3, 4, 5] #mutable
+
+# for ch in mystr:
+#     print(ch)
+
+# for num in mynums:
+#     print(num)
+
+# #anything iterable can be 'indexed' into
+# print(mystr[0], mystr[1], mystr[2], mystr[3], mystr[4])
+
+# mynums[0] = 5
+# print(mynums)
+
+#mystr[0] = 'J'
+#mutable = changable
+#immutable = not changable once created
+# mystr = "hello" is immutable
+
+#-----------------------------------------------------------------------
+#Substring
+# mystr = "hello"
+# print(mystr[0])
+# print(mystr[1:4])
+
+# mystr = "J" + mystr[1:5]
+# print(mystr)
+
+#Iterable objects are not always mutable
+
+#slicing with mutable objects
+# mynums = [1, 2, 3, 4, 5]
+
+# mynums[2:2] = [2.5, 2.6]
+# print(mynums)
+
+# mynums[3] = [2.5, 2.6]
+# print(mynums)
+
+# for i, v in enumerate(mynums):
+#     # i - index location in the list
+#     # v - the value at the index location
+#     print(i, v)
+#     #index += 1
+# print(mynums)
+
+#Lists are slow
+
+#tuple - immutable list
+# mynums = (5, 8, 1, 123456789, 5) #immutable
+# mynums[2] = 2.5
+
+# x = 5 
+# y = 6
+
+# (x, y) = (y, x)
+
+# temp = x
+# x = y
+# y = temp
+#Basic swap algorithm
+
+# num = [5] * 3
+# print(num)
+
+# num = (5,) * 3 #single element tuples MUST have a trailing comma
+# print(num)
+
+contacts = [
+    ["bill", "867-5309"], 
+    ["jane", "555-1212"],
+]
+
+name = input("Enter a name: ")
+
+#worst case scenario
+#looping n times, where n is the number of items
+for contact in contacts:
+    if contact[0] == name:
+        print(contact[1])
+        break
+
+#relationship index => value
+
+#list[index] = value
+#dictionary[key] = value
+# - key/value pairs
+# - keys must be unique
+# - keys must be immutable
+
