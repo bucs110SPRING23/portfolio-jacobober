@@ -1,0 +1,31 @@
+# 02/27/23
+# For loop
+#     for a set number of iterations
+#     for iterating over a collection
+
+# While Loop 
+#     More control over the loop
+
+#While Loop
+#- while <boolean condition>:
+#       <code block>
+#if boolean condition is True, execute 
+
+i = 0 #iterating variable
+while i < 10:
+    print(i)
+    i += 1 #iterating variable
+
+#Any for loop can be recreated with a while loop
+#Some while loops cannot be recreated with a for loop
+
+print("Enter numbers to sum ['q' to quit]")
+sum = 0 
+while sum != 'q':
+    value = input("number: ")
+    if value.isdigit():
+        value = int(value)
+        sum += value # sum = sum + value
+    elif value == 'q':
+        print("Your total is:", sum)
+        sum = value

@@ -94,3 +94,10 @@ for contact in contacts:
 # - keys must be unique
 # - keys must be immutable
 
+#Strings- list characters - immutable
+#Lists  - List of any set of objects
+#Tuples - Immutable list of any set of objects
+mytuple = (5, 8, 1, 123456789, 5)
+#mytuple[0] = 1 # ERROR!
+#Dictionaries - used to store key/value pairs
+mydictionary = {"a":1, "b":2, "c": 3}
