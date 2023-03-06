@@ -90,6 +90,5 @@ while 1:
         text = font.render("Tie!", True, "white")
         screen.blit(text, (300, 100))
     pygame.display.flip()
-    pygame.time.wait(3000)
+    pygame.time.wait(6000)
     break
-#Part B
