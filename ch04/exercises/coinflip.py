@@ -3,6 +3,7 @@ import random
 import pygame
 import math
 
+
 def is_in_screen(w, t):
     return True
 
@@ -41,4 +42,4 @@ while is_in_screen(wn, t):
     # if abs(turtleX) > x_range or abs(turtleY) > y_range:
     #     is_in_screen = False
 
-turtle.exitonclick
+wn.exitonclick()
