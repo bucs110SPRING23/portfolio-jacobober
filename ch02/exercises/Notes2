@@ -1,0 +1,70 @@
+#bool - boolean value
+# True/False
+# - caps are important
+
+#True, 1, "Hello"
+
+print(type(True))
+
+#print(bool(1), bool(-1), bool ("hello"))
+#All true
+#print(bool(0), bool(""), bool([]))
+#All false
+
+#boolean expressions
+
+x = 5 
+y = 10
+
+print(x==y) #equality check, ==, is a boolean equality test. = is assignment
+print(x > y)
+print(x < y)
+print(x >= y) #Can't do => - ERROR!
+print(x <= y) #Can't do =< - ERROR!
+
+#Semantic Operators
+#and, or, not - semantic operators
+#and: and == True, when x and y are both True
+
+print(True and True) #true
+print(True and False) #false
+print(False and True)
+print(False and False)
+
+# or - at least one True
+
+print(True or True) #true
+print(True or False) #true
+print(False or True) #true
+print(False or False) #false
+
+#is and in
+#is checks to see if it's exactly the same thing
+print(1 is int) #False
+print(1 is 1) #True
+
+
+#elif
+#always goes between the if and else
+# is optional
+#can have as many as you like
+
+###Fizzbuzz
+
+# loop through a range of values supplied by the user
+# for each value in the range
+# if the value is divisible by 3, print "fizz"
+# if the value is divisible by 5, print "buzz"
+# if the value is divisible by 3 and 5, print "fizzbuzz"
+
+num = int(input("Enter an upper limit:"))
+for i in range(num+1):
+    print("number: ", i)
+    #if not i % 3:
+    if i % 3 == 0 and i % 5 == 0:
+        print("fizzbuzz")
+    elif i % 3 == 0:
+        print("fizz")
+    elif i % 5 == 0:
+        #else: error
+        print("buzz")

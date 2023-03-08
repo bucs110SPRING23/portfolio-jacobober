@@ -1,0 +1,10 @@
+#Vending Machine
+#Black boxing
+
+print("Welcome to the vending machine")
+code = input("Please enter a code: ")
+money = input("Give me money: ")
+
+#Collisions
+# - 2 variables of the same name
+# - can't have variables of the same name in the same scope
