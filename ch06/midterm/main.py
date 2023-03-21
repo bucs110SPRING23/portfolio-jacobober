@@ -1,6 +1,7 @@
 import turtle
 
 # Define the draw_house function
+
 def draw_house(turt, size, color):
     """
     This function draws a house with the specified color and size from the user.
