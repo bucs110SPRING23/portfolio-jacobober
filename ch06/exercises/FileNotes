@@ -1,0 +1,81 @@
+# def func():
+#     pass
+
+
+
+# def percentage_to_letter(percent):
+#     let = "A"
+#     if 80 <= percent < 90:
+#         let = "B"
+#     elif 70 <= percent < 80:
+#         let = "C"
+#     elif 60 <= percent < 70:
+#         let = "D"
+#     elif percent < 60:
+#         let = "F"
+#     return let
+
+# def is_passing(letter): #boolean functions, is_* convention
+#     """
+#     This is a function that returns a letter grade based on a percentage
+#     args: percent (int)
+#     return: letter (str) 
+#     """
+#     return letter.lower() in "abc"
+
+# def main(): #driver code/top level algorithm
+#     #no docstring
+#     grades = [90, 80, 70, 60, 50]
+#     for grade in grades:
+#         letter = percentage_to_letter(90)
+#         if is_passing(letter):
+#             print("You passed!")
+#         else:
+#             print("Someone messed up your grades!")
+
+
+##Documentation
+#"""
+#Blah Blah this is what the code does and this is what it has
+#"""
+
+#Programming Pattern
+
+#   -For-programming pattern
+#   -Accumulator pattern: Bascially a summation. 
+
+#Accumulator = start_value
+# for i in list:
+# accumulator = accumulator <operation> i
+
+
+#####: 03/15/23
+#Files
+# - saved program state
+
+# Operating System: - manage files
+# request the file from the OS
+# - Where
+# - Name
+# - How to use it
+
+# - Working with files is one-way
+# def main(): 
+#     file_pointer = open("scope.py/ideas.txt", "r")
+#     ideas = file_pointer.read()
+#     print(ideas)
+    
+#     # idea = input("Enter an idea: ")
+#     # ideas = []
+#     # ideas.append(idea)
+#     # print(ideas)
+
+# main()
+
+# file_pointer = open() #modes: 'r', 'w', 'a'
+# file_pointer.write("Hello World") #Does not add the newline <enter> like print
+# file_pointer.close() #Always close files when writing
+
+# file streams - one way
+
+# #'w' - deletes any existing file, truncate the file

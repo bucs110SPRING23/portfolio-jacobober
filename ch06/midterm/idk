@@ -1,0 +1,88 @@
+import turtle
+
+# Define the draw_house function
+def draw_house(t, size, color):
+ '''This function draws
+ '''
+    t.color(color)
+    t.begin_fill()
+
+    # Draw the main house
+    t.forward(size * 4)
+    t.right(90)
+    t.forward(size * 3)
+    t.right(90)
+    t.forward(size * 4)
+    t.right(90)
+    t.forward(size * 3)
+    t.right(90)
+
+    # Draw the roof
+    t.color("red")
+    t.penup()
+    t.goto(size * 4, 0)
+    t.pendown()
+    t.begin_fill()
+    t.goto((size * 4) / 2, size * 3)
+    t.goto(0, 0)
+    t.end_fill()
+
+    # Draw the door
+    t.color("brown")
+    t.penup()
+    t.goto(size * 1.5, -size)
+    t.pendown()
+    t.begin_fill()
+    t.forward(size * 1.15)
+    t.right(90)
+    t.forward(size * 2)
+    t.right(90)
+    t.forward(size * 1.15)
+    t.right(90)
+    t.forward(size * 2)
+    t.right(90)
+    t.end_fill()
+
+    # Draw the doorknob
+    t.color("yellow")
+    t.penup()
+    t.goto(size * 2.25, -1.75 * size)
+    t.pendown()
+    t.dot(size / 5)
+    t.end_fill()
+
+    # Return size of the house
+    return size
+
+# Define the main function
+def main():
+    # Create a turtle object
+    t = turtle.Turtle()
+
+    # Ask the user for input
+    size = int(input("Enter the size of the house: "))
+    color = input("Enter the color of the house: ")
+
+    # Draw the house and get the size
+    house_size = draw_house(t, size, color)
+
+    # Draw the circle in the top left
+    t.penup()
+    t.goto(-house_size * 2, house_size * 3)
+    t.pendown()
+    t.color("blue")
+    t.begin_fill()
+    t.circle(house_size)
+    t.end_fill()
+
+    # Hide the turtle
+    t.hideturtle()
+
+    # Print the size of the house
+    print("The house is", house_size, "units long.")
+
+    # Keep the window open until manually closed
+    turtle.exitonclick()
+
+# Call the main function
+main()
