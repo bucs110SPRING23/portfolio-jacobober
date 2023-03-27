@@ -1,0 +1,40 @@
+#Managing Complexity - advanced programming just manages complexity
+#Unix - 10000 SLOC (Source lines of code)
+#Chrome - 10,000,000 SLOC
+#OS X - 100,000,000 SLOC
+
+#Complex Objects
+# - primitives: int, str, float, lists, dict, tuple
+# - turtle: x(int), y, heading, color(color), pensize(int), shape(str)
+
+#bundle data and functions together
+# - state: the current values of the data in the object
+# - behavior: the functions that operate on the data in the object
+
+# Point
+# - object should do one thing
+# state: x, y, color
+# behavior: change_color, move
+
+#Classes == Type 
+import turtle
+
+t = turtle.Turtle()
+print(type(t)) #Complex
+print(type(1)) #Primitive
+
+#Class are blueprint for objects
+# - Functions are stored algorithms
+# - Class as a stored data type
+# - Classes are not executable
+# - Don't put executable code in global space, definitions are fine
+
+#Point class
+# - Instance: An object created from a specific class
+#    - t = turtle.Turtle() #t is an instance of Turtle
+# - instance variable: an internal variable that is part of an instance
+#    -t.x, t.pos #x and pos are instance variables
+# - interface: the functions and variables of an object
+#    -t.forward() #.forward() part of the interface if turtle
+
+#Point- Make it a class ourselves
