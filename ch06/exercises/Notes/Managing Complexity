@@ -38,3 +38,4 @@ print(type(1)) #Primitive
 #    -t.forward() #.forward() part of the interface if turtle
 
 #Point- Make it a class ourselves
+

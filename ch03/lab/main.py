@@ -15,11 +15,11 @@ while 1:
     screen.fill("orange")
     pygame.draw.circle(screen, "light blue", center_point, screen_size[1] / 2)
     pygame.draw.circle(screen, "black", center_point, screen_size[1] / 2, 5)
+    pygame.draw.line(screen, "black", (center_point[0], center_point[1] - width/2), (center_point[0], center_point[1] + width/2), 5)
+    pygame.draw.line(screen, "black", (center_point[0] - width/2, center_point[1]), (center_point[0] + width/2, center_point[1]), 5)
     # pygame.draw.line(screen, "black", [screen_size[0] / 2, 0], [screen_size[1] / 2, 0])
 #Part B
-    # pygame.display.flip()
-    # pygame.time.wait(6000)
-    
+
     for throw in range(10):
         randomX = random.randrange(0, screen_size[0])
         randomY = random.randrange(0, screen_size[1])
@@ -35,21 +35,9 @@ while 1:
         pygame.display.flip()
         pygame.time.wait(2000)
     
-    # pygame.draw.circle(screen, "dark blue", dartpoint, 10)
-    #     pygame.display.flip()
-    #     pygame.time.wait(2000)
+
     pygame.time.wait(6000)
 
-#   for throw in range(10):
-#         randomX = random.randrange(0, screen_size[0])
-#         randomY = random.randrange(0, screen_size[1])
-#         dartpoint = (randomX, randomY)
-#         pygame.draw.circle(screen, "dark blue", dartpoint, 10)
-#         pygame.display.flip()
-#         pygame.time.wait(2000)
-    
-   
-#     pygame.time.wait(6000)
     break
 
 
