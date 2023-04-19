@@ -1,0 +1,7 @@
+from src.controller import Controller
+
+def main(): 
+    controller = Controller()
+    controller.mainloop()
+
+    #Sprites must have self.image instance variable, must be Surface object
