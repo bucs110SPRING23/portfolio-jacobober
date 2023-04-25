@@ -11,5 +11,12 @@ def caesar_decipher(text, shift):
         result += char
     return result
 
-# def main():
-#     file_pointer = open("")
+def main():
+    file_pointer = open("encrypted-#B00829653.txt", "r")
+    file_text = file_pointer.read()
+    for char in file_text:
+        file_encrypt = file_text.replace(file_text, caesar_decipher(file_text, 2))
+    filenew = open("decrypted.txt", "w")
+    filenew.write(file_encrypt)
+
+main()
