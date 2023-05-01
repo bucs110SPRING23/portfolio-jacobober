@@ -12,11 +12,11 @@ def caesar_decipher(text, shift):
     return result
 
 def main():
-    file_pointer = open("encrypted-#B00829653.txt", "r")
+    file_pointer = open("/Users/jacobober/github-classroom/bucs110SPRING23/portfolio-jacobober/ch07/exercises/encrypted.txt", 'r')
+    
     file_text = file_pointer.read()
-    for char in file_text:
-        file_encrypt = file_text.replace(file_text, caesar_decipher(file_text, 2))
-    filenew = open("decrypted.txt", "w")
-    filenew.write(file_encrypt)
+    file_unencrypt = caesar_decipher(file_text, 9)
+    filenew = open("/Users/jacobober/github-classroom/bucs110SPRING23/portfolio-jacobober/ch07/exercises/decrypted.txt", "w")
+    filenew.write(file_unencrypt)
 
 main()

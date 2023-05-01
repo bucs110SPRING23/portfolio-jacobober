@@ -1,0 +1,76 @@
+#Network Porgramming
+
+#Build a program that asks trivia questions
+
+#Server: Any computer listening for incoming network connections
+
+#Request: A incoming connection that asks for some resource from the server
+
+# - Images, Video, Music
+# - Text
+# - JSON
+# - HTML
+
+#Types of Requests 
+
+# - GET - read operation
+# - PUT - write operation (requires security)
+# Login, deleting
+
+# Headers
+# sent with request and the response
+
+# - Status codes
+#   - 200: ok, everything went fine
+#   - 400: Resource cannot be delivered
+#   - 500: Bad code server
+
+# - IP address
+# - system information (geolocation)
+
+# urllib
+
+#API - Application Programmer's Interface
+#APIS can return data in any format, usually returned in JSON
+
+# URL Parameters
+
+#?, &
+import requests
+import random
+
+def __init__(self):
+    self.url = "https://p[emtdb.com/api.php?"
+    self.varstr = "amount=2&category=18"
+
+def get(self):
+    url = self.url + self.varstr
+    response = requests.get(url)
+    data = response.json()
+    return data['results']
+
+def csquestions(self):
+    self.varstr = "amount=2&category=18"
+    return self.get()
+
+def general(self):
+    self.varstr = "amount = 2"
+    return self.get()
+
+def main():
+    tp = TriviaProxyAPI()
+    results = tp.csquestions()
+
+    # for r in
+    # response = requests.get("http://opentdb.com/api.php?amount=2&category=18")
+    # data = response.json()
+    # results = data['results']
+
+    for r in results: 
+        print[r['question']]
+    possibles = [r["correcto_answer"]]+ r["incorrect_answers"]
+    random.shuffle(possibles)
+    print("Make your selection:")
+
+
+main()
