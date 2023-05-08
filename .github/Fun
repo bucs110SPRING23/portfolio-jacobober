@@ -1,0 +1,57 @@
+import turtle
+
+# create a turtle instance
+t = turtle.Turtle()
+
+# set the turtle's color and fill properties
+t.color("black", "yellow")
+t.begin_fill()
+
+# draw the bird's body
+t.forward(100)
+t.right(90)
+t.forward(40)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(40)
+
+# draw the bird's head
+t.right(45)
+t.forward(40)
+t.right(90)
+t.forward(40)
+t.right(45)
+
+# draw the bird's beak
+t.color("black", "orange")
+t.begin_fill()
+t.right(90)
+t.forward(20)
+t.right(120)
+t.forward(30)
+t.right(120)
+t.forward(30)
+t.right(120)
+t.forward(20)
+t.end_fill()
+
+# draw the bird's eye
+t.penup()
+t.goto(80, 70)
+t.color("black", "white")
+t.begin_fill()
+t.circle(10)
+t.end_fill()
+t.color("black")
+t.pendown()
+t.circle(10)
+
+# finish filling the bird's body
+t.end_fill()
+
+# hide the turtle
+t.hideturtle()
+
+# keep the turtle window open until it's closed
+turtle.done()

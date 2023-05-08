@@ -1,0 +1,43 @@
+# def foo(x, y, z):
+#     print(x, y, z)
+
+# foo(1, 2, 3)
+# foo(2, 1, 3)
+#foo(3, 2) #ERROR
+
+# def bar(x=0, y=2, z=3):
+#     print(x, y, z)
+
+# bar(1, 2)
+
+#Local variables get deleted at the end of the function
+#Paramaters are local variables
+
+def foo():
+    x = 5
+    #return None : NoneType
+
+def bar(x=None):
+    if x is None:
+        x = 5*2
+
+def foo():
+    x = 5
+    return (x, 6) #return a value 5
+
+y, z = foo()
+print(y)
+
+
+#local scope - makes the global variable inaccessible
+#global variables never leave memory while the program is running
+
+def start():
+    print(var)
+
+def main(): #main function #put everything that's in global scope in main
+    x = 5
+    start(x)
+    start(x)
+
+main() #call the main function in global scope - always call main at the end of your program

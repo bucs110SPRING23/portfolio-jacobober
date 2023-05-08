@@ -1,0 +1,51 @@
+# class == type
+# class are named with TitleCase
+class Point:
+    """docstring for Point"""
+
+    #Functions are called methods when they are in a class
+    #First parameter to any method is 'self'
+    def __init__(self, x = 0, y = 0, color = "red"):
+        #Self ties the data to the objects scope
+        self.xcoor = abs(x)
+        self.ycoor = abs(y)
+        self.color = color
+
+#import point
+#import sub.module
+#From sub.module import
+
+#1) Look in the current folder for the file/module
+#2) Look in the python installed moudles
+#3) Look in the python library
+import random
+
+points = []
+for p in range(10):
+    x = random.randint(0,250)
+    y = random.randint(0,250)
+    points.append(point.Point(x, y))
+
+t = turtle.Turtle()
+for p in points:
+    p.random_color()
+    t.color(p.color)
+    t.goto(p.xcoor, p.ycoor())
+
+
+#MVC- Model View Controller
+# for GUI programs
+# Similar to accumulator pattern
+# Design patterns
+
+#Basic Design for GUI
+
+#   View - displays things on screen
+#   pygame handles viewcode for us
+
+#Controller: controls things on screen
+#   keyboard
+
+#Model
+
+#View
